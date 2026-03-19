@@ -1,6 +1,7 @@
 [build]
-  command = "chmod +x node_modules/.bin/vite && vite build"
+  command = "chmod +x node_modules/.bin/vite && node_modules/.bin/vite build"
   publish = "dist"
 
 [build.environment]
   NODE_VERSION = "20"
+  NODE_ENV = "production"
